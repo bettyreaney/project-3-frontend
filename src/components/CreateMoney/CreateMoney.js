@@ -44,24 +44,24 @@ function CreateMoney() {
   return (
     <div className="CreateMoney">
       <header className="CreateMoneyHeader">
-        <h1>Project 3</h1>
+        <h2>Add a New Transaction</h2>
       </header>
 
-      <form onSubmit={evt => handleSubmit(evt) } >
+      <form id="newTransaction" onSubmit={evt => handleSubmit(evt) } >
 
-          <strong>Select Category</strong>
+          <strong> Select Category </strong>
           <select name="category" id="category" value={category} onChange={handleChange}>
             <option value="income">Income</option>
             <option value="expense">Expense</option>
           </select>
 
-          <label htmlFor="addAmount">Add Amount</label>
+          <label htmlFor="addAmount"> Add Amount </label>
           <input type="text" name="addAmount" id="addAmount" onChange={handleChange} />
 
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title"> Title </label>
           <input type="text" name="title" id="title" onChange={handleChange} />
 
-          <input type="submit" />
+          <input id="submit" type="submit" />
 
         </form>
 

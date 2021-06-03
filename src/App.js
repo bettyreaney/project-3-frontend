@@ -40,13 +40,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>$ Money Tracker $</h1>
+      </header>
 
       <button id="new" onClick={evt => handleRender(evt)}>Add a New Transaction</button>
       <button id="income" onClick={evt => handleRender(evt)}>View All Income</button>
       <button id="expense" onClick={evt => handleRender(evt)}>View All Expenses</button>
       <button id="all" onClick={evt => handleRender(evt)}>View All Transactions</button>
-        
-      </header>
+
       {createNew === true ? 
       <CreateMoney />
     : null}

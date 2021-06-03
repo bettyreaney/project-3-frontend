@@ -1,7 +1,14 @@
+h2 {
+    color: #32945e;
+}
 
 .CreateMoney {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: blue;
+}
+
+#submit {
+    margin: 5px;
 }
