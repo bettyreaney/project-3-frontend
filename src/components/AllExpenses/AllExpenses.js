@@ -1,14 +1,14 @@
-import './AllIncome.css';
+import './AllExpenses.css';
 import { useState, useEffect } from 'react';
 
-function AllIncome() {
+function AllExpenses() {
 
-const [allItems, setAllItems] = useState([])
+const [allExpenses, setAllExpenses] = useState([])
 
 useEffect(() => {
     fetch('http://localhost:3001/money')
     .then(res => res.json())
-    .then(data => setAllItems(data))
+    .then(data => setAllExpenses(data))
 }, [])
 
   return (
@@ -17,10 +17,10 @@ useEffect(() => {
         
       </header>
         
-        {allItems.length ? allItems.map(item => {
+        {allExpenses.length ? allExpenses.map(item => {
             return(
                 <li>
-                    {item.income}
+                    {item.expense}
                     {item.addAmount}
                     {item.title}
                 </li>
@@ -31,4 +31,4 @@ useEffect(() => {
   );
 }
 
-export default AllIncome;
+export default AllExpenses;

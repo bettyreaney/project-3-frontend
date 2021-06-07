@@ -1,7 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import CreateMoney from './components/CreateMoney/CreateMoney';
-import AllIncome from './components/AllIncome/AllIncome';
+import AllIncome from './components/AllIncome/AllIncome'
+import AllExpenses from './components/AllExpenses/AllExpenses';
 
 function App() {
 
@@ -48,7 +49,7 @@ function App() {
       <button id="expense" onClick={evt => handleRender(evt)}>View All Expenses</button>
       <button id="all" onClick={evt => handleRender(evt)}>View All Transactions</button>
 
-      {createNew === true ? 
+    {createNew === true ? 
       <CreateMoney />
     : null}
 
@@ -57,7 +58,7 @@ function App() {
     : null} 
 
     {allExpenses === true ? 
-    <p>Expenses</p>
+    <AllExpenses/>
     : null}
 
     {allTransactions === true ? 
