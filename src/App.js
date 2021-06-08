@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import CreateMoney from './components/CreateMoney/CreateMoney';
 import AllIncome from './components/AllIncome/AllIncome'
 import AllExpenses from './components/AllExpenses/AllExpenses';
+import AllTransactions from './components/AllTransactions/AllTransactions';
 
 function App() {
 
@@ -38,11 +39,20 @@ function App() {
     }
   }
 
+  function handleEdit(id) {
+    console.log(id);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>$ Money Tracker $</h1>
       </header>
+
+      <div>
+      <strong id="balance">Balance</strong>
+      </div>
+      
 
       <button id="new" onClick={evt => handleRender(evt)}>Add a New Transaction</button>
       <button id="income" onClick={evt => handleRender(evt)}>View All Income</button>
@@ -58,15 +68,15 @@ function App() {
     : null} 
 
     {allExpenses === true ? 
-    <AllExpenses/>
+      <AllExpenses/>
     : null}
 
     {allTransactions === true ? 
-    <p>All Transactions</p>
+    <AllTransactions />
     : null}
 
       
-    </div>
+  </div>
   );
 }
 

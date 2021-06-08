@@ -15,8 +15,18 @@
   box-shadow: darkgray 50px;
 }
 
+article > div:nth-child(1) {
+  flex-grow: 1;
+}
+
 #new, #income, #expense, #all {
   color: #32945e;
   padding: 5px;
-  margin: 5px;
+  margin: 30px;
+}
+
+#balance {
+  color: #32945e;
+  padding: 10px;
+  margin: 10px;
 }
