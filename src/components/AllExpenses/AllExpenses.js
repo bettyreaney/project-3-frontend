@@ -22,8 +22,8 @@ useEffect(() => {
                 <li>
                     {item.expense}
                     <button id="deleteBtn" type="submit">🗑</button>
-                    {item.addAmount}
-                    {item.title}
+                    {/* {item.addAmount} */}
+                    {/* {item.title} */}
                     <button id="editBtn" type="submit">Edit</button>
                 </li>
             )
