@@ -11,6 +11,9 @@
 }
 
 #deleteBtn {
-    padding: 5px;
     margin: 5px;
+}
+
+#income {
+    color: green;
 }

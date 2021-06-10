@@ -12,6 +12,7 @@ function CreateMoney() {
     if (evt.target.id === 'category') setCategory(evt.target.value)
     if (evt.target.id === 'addAmount') setAddAmount(evt.target.value)
     if (evt.target.id === 'title') setTitle(evt.target.value)
+    // if (evt.target.id === 'income') setTitle(evt.target.value)
     console.log(category)
   }
 
@@ -24,6 +25,7 @@ function CreateMoney() {
       category: category,
       addAmount: addAmount,
       title: title,
+      // income: income,
     }
     fetch('http://localhost:3001/money', {
       method: 'POST',
@@ -51,8 +53,8 @@ function CreateMoney() {
 
           <strong> Select Category </strong>
           <select name="category" id="category" value={category} onChange={handleChange}>
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
           </select>
 
           <label htmlFor="addAmount"> Add Amount </label>

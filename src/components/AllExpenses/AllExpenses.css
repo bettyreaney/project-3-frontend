@@ -7,3 +7,14 @@
 #deleteBtn {
     margin: 5px;
 }
+
+#expenses {
+    color: rgb(168, 48, 48);
+}
+
+
+#newTransaction {
+    color: #32945e;
+    padding: 5px;
+    margin: 5px;
+}

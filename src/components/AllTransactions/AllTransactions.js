@@ -16,16 +16,19 @@ useEffect(() => {
       <header className="App-header">
         
       </header>
+
+      <h3 id="allTransactions">All Transactions</h3>
         
         {allTransactions.length ? allTransactions.map(item => {
             return(
                 <li>
-                    {item.income}
-                    {item.expense}
+                    {/* {item.income} */}
+                    {/* {item.expense} */}
                     <button id="deleteBtn" type="submit">🗑</button>
-                    {item.addAmount}
+                    {item.category}{" "}
+                    {item.addAmount}{" "}
                     {item.title}
-                    <button id="editBtn" type="submit">Edit</button>
+                    {/* <button id="editBtn" type="submit">Edit</button> */}
                 </li>
             )
         }) : null }
