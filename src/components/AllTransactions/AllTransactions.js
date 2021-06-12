@@ -22,8 +22,6 @@ useEffect(() => {
         {allTransactions.length ? allTransactions.map(item => {
             return(
                 <li>
-                    {/* {item.income} */}
-                    {/* {item.expense} */}
                     <button id="deleteBtn" type="submit">🗑</button>
                     {item.category}{" "}
                     {item.addAmount}{" "}

@@ -29,7 +29,6 @@ useEffect(() => {
             return(
                 <li>
                     <button id="deleteBtn" type="submit">🗑</button>
-                    {/* {item.category} */}
                     {item.addAmount}{" "}
                     {item.title}
                     {/* <button id="editBtn" type="submit">Edit</button> */}
