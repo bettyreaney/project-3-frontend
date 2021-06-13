@@ -11,6 +11,15 @@ useEffect(() => {
     .then(data => setAllTransactions(data))
 }, [])
 
+async function handleDelete (id) {
+  const data = await fetch(`http://localhost:3001/money/${id}`, {
+     method: 'DELETE',
+   })
+   setAllTransactions(prevState => ({
+     data,
+   }))
+ };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +31,7 @@ useEffect(() => {
         {allTransactions.length ? allTransactions.map(item => {
             return(
                 <li>
-                    <button id="deleteBtn" type="submit">🗑</button>
+                    <button id="deleteBtn" type="submit" onClick={ (id) => {handleDelete(item._id)} }>🗑</button>
                     {item.category}{" "}
                     {item.addAmount}{" "}
                     {item.title}
