@@ -17,6 +17,16 @@ useEffect(() => {
     })
 }, [])
 
+async function handleDelete (id) {
+ const data = await fetch(`http://localhost:3001/money/${id}`, {
+    method: 'DELETE',
+  })
+  setAllExpenses(prevState => ({
+    data,
+  }))
+};
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,8 +38,7 @@ useEffect(() => {
         {allExpenses.length ? allExpenses.map(item => {
             return(
                 <li>
-                  <button id="deleteBtn" type="submit">🗑</button>
-                    {/* {item.category} */}
+                  <button id="deleteBtn" type="submit" onClick={ (id) => {handleDelete(item._id)} }>🗑</button>
                     {item.addAmount}{" "}
                     {item.title}
                     {/* <button id="editBtn" type="submit">Edit</button> */}
