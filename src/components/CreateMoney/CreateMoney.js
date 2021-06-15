@@ -25,7 +25,6 @@ function CreateMoney() {
       category: category,
       addAmount: addAmount,
       title: title,
-      // income: income,
     }
     fetch('http://localhost:3001/money', {
       method: 'POST',
