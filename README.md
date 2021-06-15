@@ -8,6 +8,7 @@ I have built an App for an easy way to track income and expense tracking
 - JavaScript
 - React
 - Express
+- Node.js
 - Mongoose
 - MongoDB
 
@@ -16,9 +17,8 @@ I have built an App for an easy way to track income and expense tracking
 
 
 ## Getting Started
-[Click here](https://taco-truck-app.herokuapp.com/) to get started
+[Click here](https://project-three-frontend.netlify.app/) to get started
 
 ## Future Enhancements
-- A greater selection of Taco Trucks that lead to where you can order
-- More options in the Header
-- Links to real taco trucks in your area where you can order
+- Work in progress: Adding a balance total to the top of the page and totals of expenses and income on the respective pages
+- 
