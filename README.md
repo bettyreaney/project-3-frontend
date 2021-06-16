@@ -1,6 +1,6 @@
 # Money Tracker
 
-I have built an App for an easy way to track income and expense tracking
+I have built an App for an easy way to track both your income and expenses. It serves as a great way to have all your finanaces in once place where you can manage it daily
 
 ## Technologies Used
 - HTML5
