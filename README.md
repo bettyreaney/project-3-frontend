@@ -20,7 +20,7 @@ I have built an App for an easy way to track both your income and expenses. It s
 [Click here](https://project-three-frontend.netlify.app/) to get started
 
 ## Unsolved Problems
-- The main unsolved problem is the total balance for both your incpme and expenses
+- The total balance for both your income and expenses to be shown
 
 ## Future Enhancements
 - Work in progress: Adding a balance total to the top of the page and totals of expenses and income on the respective pages
