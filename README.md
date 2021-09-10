@@ -12,7 +12,7 @@ I have built an App for an easy way to track both your income and expenses. It s
 - Mongoose
 - MongoDB
 
-## Screenshots
+## Wireframes
 ![screenshot](./public/imgs/wireframe.png)
 
 
